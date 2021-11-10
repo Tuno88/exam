@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border: 1px solid red;
+            width: 80%;
+            min-height: 100vh;
+            margin: auto;
+        }
+        .col{
+            border: 1px solid green;
+            float: left;
+        }
+        @media screen and ( max-width: 767px) {
+            [class*="col-"]{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .col{
+                width: 50%;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            .col{
+                width: 33.3%;
+            }
+        }
+
+        div{
+            font-family: 'Times New Roman', Times, serif;            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: large;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tùng túng tủng tũng </h1>
+    <div class="row">
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatum soluta ipsum et veritatis enim, assumenda corrupti adipisci alias. Harum tenetur explicabo sit inventore temporibus suscipit, veritatis optio quo vitae?</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ducimus ex non eaque eveniet et tenetur recusandae accusamus pariatur, aliquam obcaecati dolorum nesciunt explicabo expedita aspernatur, sint eum temporibus harum.</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, incidunt reprehenderit. Voluptatum praesentium error dolores, minus ipsum ullam commodi deserunt officia at placeat nam. Vitae voluptate natus et quia repellat!</div>
+
+    </div>
+</body>
+</html>
